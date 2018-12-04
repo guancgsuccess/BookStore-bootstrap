@@ -1,0 +1,34 @@
+/**首页**/
+body{
+	/*background-color: oldlace;*/
+}
+
+#gcarouse{
+	margin-bottom: 20px;
+}
+
+#gcarouse img{
+	width: 33.3%;
+	height: 200px;
+}
+
+.thumbnail a img{
+	width: 98%;
+	height: 160px;
+}
+
+.thumbnail img:hover{
+	border: 1px dashed #ccc;
+}
+
+#search{
+	position: relative;
+	float: left;
+	padding: 0px 12px;
+	margin-left: -1px;
+	line-height: 1.42857143;
+	color: #428bca;
+	text-decoration: none;
+	background-color: #fff;
+	width: 220px;
+}

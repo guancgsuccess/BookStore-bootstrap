@@ -1,0 +1,17 @@
+#imgDiv img{
+	width: 45px;
+	height: 75px;
+}
+
+#imgDiv td{
+	vertical-align: middle;
+}
+
+#imgDiv img:hover{
+	width: 60px;
+	height: 90px;
+	transition: width 0.5s, height 0.5s;
+}
+.form-control{
+	width: 100px;
+}

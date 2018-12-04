@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<!--让浏览器使用最新的IE内核进行渲染页面-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>在线书城首页</title>
+		<link type="text/css" rel="stylesheet" href="dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	</head>
+
+	<body>
+		<!--导航部分  begin-->
+		<div class="container" style="margin-top: 5px;">
+			<nav class="navbar navbar-default well-sm" style="padding-left: 0px;" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+				            <span class="sr-only">切换导航</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+        				</button>
+						<a class="navbar-brand" href="#">在线书城</a>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav pull-left">
+							<li class="active">
+								<a href="index.html">首页</a>
+							</li>
+					
+							<li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										图书类型
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="books_list.html">精选图书</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="books_list.html">推荐图书</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="books_list.html">特价图书</a>
+										</li>
+										<li class="divider"></li>
+									</ul>
+								</li>
+							</li>
+							<li>
+								<a href="#" data-toggle="modal" data-target="#myModal">登录</a>
+							</li>
+							<li>
+								<a href="index.html">安全退出</a>
+							</li>
+							<li>
+								<a href="#" data-toggle="modal" data-target="#register">注册</a>
+							</li>
+							<li>
+								<a href="order_list.html">我的订单</a>
+							</li>
+							<li>
+								<a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"> </span>我的购物车</a>
+							</li>
+						</ul>
+						<div class="input-group col-md-3 pull-right" style="positon:relative;padding: 7px;">
+							<input type="text" class="form-control" placeholder="请输入图书名" />
+							<span class="input-group-btn">  
+					            <button class="btn btn-info btn-search">
+					            	<span class="glyphicon glyphicon-search"></span>
+					            </button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!--导航部分 end-->
+
+		<!--最顶端轮播图片 begin-->
+		<div id="gcarouse" class="container">
+			<!--轮播-->
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）指标 -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<a href="details.html"><img src="images/book1_nav.jpg" class="pull-left" alt="First slide"></a>
+						<a href="details.html"><img src="images/book2_nav.jpg" class="pull-left" alt="First slide"></a>
+						<a href="details.html"><img src="images/book3_nav.jpg" alt="Third slide"></a>
+					</div>
+					<div class="item">
+						<a href="details.html"><img src="images/book4_nav.jpg" class="pull-left" alt="First slide"></a>
+						<a href="details.html"><img src="images/book5_nav.jpg" class="pull-left" alt="First slide"></a>
+						<a href="details.html"><img src="images/book6_nav.jpg" alt="Third slide"></a>
+					</div>
+					<div class="item">
+						<a href="details.html"><img src="images/book7_nav.jpg" class="pull-left" alt="First slide"></a>
+						<a href="details.html"><img src="images/book8_nav.jpg" class="pull-left" alt="First slide"></a>
+						<a href="details.html"><img src="images/book9_nav.jpg" alt="Third slide"></a>
+					</div>
+				</div>
+
+				<!-- 轮播（Carousel）导航 -->
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+			</div>
+		</div>
+		<!--最顶端轮播图片 end-->
+
+		<!--图书内容部分 begin-->
+		<div class="container">
+			<!--精选图书 begin-->
+			<div>
+				<div class="text-primary"><img src="images/bullet1.gif" alt="" title="">
+					<a href="#">精选图书</a>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-3 wow fadeInLeft animated">
+						<div class="thumbnail">
+							<a href="details.html"><img src="images/book1_nav.jpg" alt="通用的占位符缩略图"></a>
+							<div class="caption">
+								<h3>品书</h3>
+								<p>价格:80元&nbsp;&nbsp;作者:吴承恩&nbsp;&nbsp;</p>
+								<p>
+									<a href="details.html">
+										更多信息
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 wow fadeInLeft animated">
+						<div class="thumbnail">
+							<a href="details.html"><img src="images/book2_nav.jpg" alt="通用的占位符缩略图"></a>
+							<div class="caption">
+								<h3>三国演义</h3>
+								<p>价格:80元&nbsp;&nbsp;作者:吴承恩&nbsp;&nbsp;</p>
+								<p>
+									<a href="details.html">
+										更多信息
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 wow fadeInRight animated">
+						<div class="thumbnail">
+							<a href="details.html"><img src="images/book3_nav.jpg" alt="通用的占位符缩略图"></a>
+							<div class="caption">
+								<h3>红楼梦</h3>
+								<p>价格:80元&nbsp;&nbsp;作者:吴承恩&nbsp;&nbsp;</p>
+								<p>
+									<a href="details.html">
+										更多信息
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 wow fadeInRight animated">
+						<div class="thumbnail">
+							<a href="details.html"><img src="images/book4_nav.jpg" alt="通用的占位符缩略图"></a>
+							<div class="caption">
+								<h3>丰乳肥臀</h3>
+								<p>价格:80元&nbsp;&nbsp;作者:吴承恩&nbsp;&nbsp;</p>
+								<p>
+									<a href="details.html">
+										更多信息
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!--分页-->
+					<div class="container">
+						<ul class="pager">
+							<li>
+								<a href="#">&larr;上一页</a>
+								<a href="#">下一页 &rarr;</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--精选图书 end-->
+
+			<!--推荐图书 begin-->
+			<div>
+				<div class="text-primary"><img src="images/bullet1.gif" alt="" title="">
+					<a href="#">推荐图书</a>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-3 wow fadeInLeft animated">
+						<div class="thumbnail">
+							<a href="details.html"><img src="images/book5_nav.jpg" alt="通用的占位符缩略图"></a>
+							<div class="caption">
+								<h3>品书</h3>
+								<p>价格:80元&nbsp;&nbsp;作者:吴承恩&nbsp;&nbsp;</p>
+								<p>
+									<a href="details.html">
+										更多信息
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 wow fadeInLeft animated">
+						<div class="thumbnail">
+							<a href="details.html"><img src="images/book6_nav.jpg" alt="通用的占位符缩略图"></a>
+							<div class="caption">
+								<h3>三国演义</h3>
+								<p>价格:80元&nbsp;&nbsp;作者:吴承恩&nbsp;&nbsp;</p>
+								<p>
+									<a href="details.html">
+										更多信息
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 wow fadeInRight animated">
+						<div class="thumbnail">
+							<a href="details.html"><img src="images/book7_nav.jpg" alt="通用的占位符缩略图"></a>
+							<div class="caption">
+								<h3>红楼梦</h3>
+								<p>价格:80元&nbsp;&nbsp;作者:吴承恩&nbsp;&nbsp;</p>
+								<p>
+									<a href="details.html">
+										更多信息
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 wow fadeInRight animated">
+						<div class="thumbnail">
+							<a href="details.html"><img src="images/book8_nav.jpg" alt="通用的占位符缩略图"></a>
+							<div class="caption">
+								<h3>丰乳肥臀</h3>
+								<p>价格:80元&nbsp;&nbsp;作者:吴承恩&nbsp;&nbsp;</p>
+								<p>
+									<a href="details.html">
+										更多信息
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!--分页-->
+					<div class="container">
+						<ul class="pager">
+							<li class="disabled">
+								<a href="#">&larr;上一页</a>
+							</li>
+							<li>
+								<a href="#">下一页 &rarr;</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--推荐图书end..-->
+
+			<!--特价图书 begin-->
+			<div>
+				<div class="text-primary"><img src="images/bullet1.gif" alt="" title="">
+					<a href="#">特价图书</a>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-3 wow fadeInLeft animated">
+						<div class="thumbnail">
+							<a href="details.html"><img src="images/book5_nav.jpg" alt="通用的占位符缩略图"></a>
+							<div class="caption">
+								<h3>品书</h3>
+								<p>价格:80元&nbsp;&nbsp;作者:吴承恩&nbsp;&nbsp;</p>
+								<p>
+									<a href="details.html">
+										更多信息
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 wow fadeInLeft animated">
+						<div class="thumbnail">
+							<a href="details.html"><img src="images/book6_nav.jpg" alt="通用的占位符缩略图"></a>
+							<div class="caption">
+								<h3>三国演义</h3>
+								<p>价格:80元&nbsp;&nbsp;作者:吴承恩&nbsp;&nbsp;</p>
+								<p>
+									<a href="details.html">
+										更多信息
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 wow fadeInRight animated">
+						<div class="thumbnail">
+							<a href="details.html"><img src="images/book7_nav.jpg" alt="通用的占位符缩略图"></a>
+							<div class="caption">
+								<h3>红楼梦</h3>
+								<p>价格:80元&nbsp;&nbsp;作者:吴承恩&nbsp;&nbsp;</p>
+								<p>
+									<a href="details.html">
+										更多信息
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 wow fadeInRight animated">
+						<div class="thumbnail">
+							<a href="details.html"><img src="images/book8_nav.jpg" alt="通用的占位符缩略图"></a>
+							<div class="caption">
+								<h3>丰乳肥臀</h3>
+								<p>价格:80元&nbsp;&nbsp;作者:吴承恩&nbsp;&nbsp;</p>
+								<p>
+									<a href="details.html">
+										更多信息
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!--分页-->
+					<div class="container">
+						<ul class="pager">
+							<li>
+								<a href="#">&larr;上一页</a>
+								<a href="#">下一页 &rarr;</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--特价图书 end-->
+			<hr>
+			<!--首页底部信息 begin-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-2 col-md-8">
+						<div class="row">
+							<div class="col-md-offset-2 col-md-2">
+								<img src="images/logo.png">
+							</div>
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-md-offset-2 col-md-10">
+										<a href="http://www.sztzedu.com">威思登软件科技有限公司&copy;所有</a>
+									</div>
+								</div>
+								<div class="gap"></div>
+								<div class="row">
+									<div class="col-md-offset-2 col-md-10">
+										<span class="text-info">天智教育&reg; |&nbsp;</span>
+										<span class="text-info">项目实训管理平台 |&nbsp;</span>
+										<span class="text-info">2012－2020 </span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--首页底部信息end->
+		<!--图书内容部分end-->
+
+		<!-- 登录模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+						<h4 class="modal-title" id="myModalLabel">
+					用户登录
+				</h4>
+					</div>
+					<div class="modal-body">
+						<!--登录的form表单-->
+						<form class="form-horizontal" role="form" action="">
+							<div class="form-group has-feedback">
+								<label for="firstname" class="col-sm-2 control-label">用户名</label>
+								<div class="col-sm-5">
+
+									<input type="text" class="form-control" id="firstname" placeholder="请输入用户名">
+									<span class="glyphicon glyphicon-user form-control-feedback"></span>
+								</div>
+								<div class="col-sm-3" style="padding-top: 10px;">
+									<label class="alert-danger">用户名不存在</label>
+								</div>
+							</div>
+							<div class="form-group has-feedback">
+								<label for="lastname" class="col-sm-2 control-label">密码</label>
+								<div class="col-sm-5">
+									<input type="text" class="form-control" id="lastname" placeholder="请输入密码">
+									<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+								</div>
+								<div class="col-sm-3" style="padding-top: 10px;">
+									<label class="alert-danger">密码不正确</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<div class="checkbox">
+										<label>
+          									<input type="checkbox">请记住我
+        								</label>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+								<input type="submit" class="btn btn-primary" value="登录">
+							</div>
+						</form>
+						<!--form结束-->
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+		</div>
+		<!-- 登录modal end/.modal -->
+		<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+						<h4 class="modal-title" id="myModalLabel">
+					用户注册
+				</h4>
+					</div>
+					<div class="modal-body">
+						<!--登录的form表单-->
+						<form action="" class="form-horizontal" role="form">
+							<div class="form-group has-feedback">
+								<label for="firstname" class="col-sm-2 control-label">用户名</label>
+								<div class="col-sm-5">
+									<input type="text" class="form-control" id="firstname" required placeholder="小写字母开头,不含中文.">
+									<span class="glyphicon glyphicon-user form-control-feedback"></span>
+								</div>
+								<!--<div class="col-sm-3" style="padding-top: 10px;">
+									<label class="alert-danger">用户名不合法</label>
+								</div>-->
+							</div>
+							<div class="form-group has-feedback">
+								<label for="lastname" class="col-sm-2 control-label">密码</label>
+								<div class="col-sm-5">
+									<input type="password" class="form-control" id="lastname" placeholder="密码长度6-8位" minlength="6" maxlength="8">
+									<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+								</div>
+								<!--<div class="col-sm-3" style="padding-top: 10px;">
+									<label class="alert-danger">密码不正确</label>
+								</div>-->
+							</div>
+							<div class="form-group has-feedback">
+								<label class="col-sm-2 control-label">确认密码</label>
+								<div class="col-sm-5">
+									<input type="password" class="form-control" id="lastname2" minlength="6" maxlength="8" placeholder="和密码保持一致">
+									<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+								</div>
+							</div>
+
+							<div class="form-group has-feedback">
+								<label class="col-sm-2 control-label">邮箱</label>
+								<div class="col-sm-5">
+									<input type="email" class="form-control" id="email" placeholder="合法邮箱格式">
+									<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+								</div>
+							</div>
+
+							<div class="form-group has-feedback">
+								<label class="col-sm-2 control-label">电话</label>
+								<div class="col-sm-5">
+									<input type="tel" class="form-control" id="email" placeholder="合法手机格式">
+									<span class="glyphicon glyphicon-earphone form-control-feedback"></span>
+								</div>
+							</div>
+
+							<div class="form-group has-feedback">
+								<label class="col-sm-2 control-label">公司</label>
+								<div class="col-sm-5">
+									<input type="text" class="form-control" id="email" placeholder="请输入公司地址">
+									<span class="glyphicon glyphicon-home form-control-feedback"></span>
+								</div>
+							</div>
+
+							<div class="form-group has-feedback">
+								<label class="col-sm-2 control-label">地址</label>
+								<div class="col-sm-5">
+									<input type="text" class="form-control" id="email" placeholder="请输入收货">
+									<span class="glyphicon glyphicon-home form-control-feedback"></span>
+								</div>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+								<input type="submit" class="btn btn-primary" value="注册">
+							</div>
+						</form>
+						<!--form结束-->
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+		</div>
+		
+		<script src="dist/js/jquery.min.js"></script>
+		<script src="js/carousel.js" type="text/javascript" charset="utf-8"></script>
+		<script src="dist/js/bootstrap.min.js"></script>
+		<script src="js/wow.js"></script>
+		<script type="text/javascript">
+			if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+				new WOW().init();
+			};
+		</script>
+	</body>
+
+</html>

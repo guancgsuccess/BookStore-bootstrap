@@ -1,0 +1,24 @@
+.table-responsive img{
+		width: 45px;
+		height: 75px;
+}
+
+.table tbody tr td{
+	vertical-align: middle;
+}
+
+.form-control {
+				width: 100%;
+			}
+			
+#search{
+	position: relative;
+	float: left;
+	padding: 0px 12px;
+	margin-left: -1px;
+	line-height: 1.42857143;
+	color: #428bca;
+	text-decoration: none;
+	background-color: #fff;
+	width: 220px;
+}
